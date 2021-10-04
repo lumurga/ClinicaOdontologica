@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --text-color: white;
+  --main-bg-color: #f7f7f7;
+  --second-bg-color: white;
+  --nav-bg-color: #91c7c5;
+  --text-shadow: 4px 4px 2px rgba(157, 139, 139, 0.6);
+  --box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.41);
+  --main-border: solid 2px #ccf3f2;
+  --second-border: solid 1px #d1f0ef;
+  --nav-shadow: 2px 3px 5px 0px rgba(92, 77, 77, 0.75);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/img/fondo.jpg");
+  background-position: center 25px;
+}
+
+
+
+nav {
+  background: var(--nav-bg-color);
+  height: 50px;
+  display: flex;
+  padding: 12px;
+  justify-content: space-between;
+  box-shadow: var(--nav-shadow);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin: 10px;
+  list-style-type: none;
+  color: var(--text-color);
+}
+
+nav h2 {
+  color: var(--text-color);
+}
+
+nav img {
+  height: 20px;
+  width: 20px;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+main article {
+  position: relative;
+  display: flex;
+  padding: 40px;
+  border: var(--main-border);
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  margin: 40px;
+  background-color: var(--main-bg-color);
+}
+
+main article h3 {
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: 8px;
+  color:var(--text-color);
+  background-color: var(--nav-bg-color);
+  box-shadow: var(--nav-shadow);
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 50px;
+}
+
+main section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main section div form {
+  display: flex;
+  flex-direction: column;
+}
+
+main section form input {
+  text-align: center;
+  border: var(--second-border);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+
+
+button {
+  border: var(--second-border)
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #e8e9eb;
+  box-shadow: 5px 4px 5px 0px rgba(175, 171, 171, 0.55);
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--second-bg-color);
+  border: var(--main-border);
+  border-radius: 4px;
+  box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.41);
+  }
+
+
+.datos {
+  margin: 30px;
+}
+
+
+.datosPac, .datosOdon {
+   display: flex;
+   justify-content: space-around;
+   list-style-type: none;
+   background-color: var(--nav-bg-color);
+   box-shadow: var(--nav-shadow);
+   padding: 20px;
+   width: 1100px;
+   margin-top: 5x;
+   border-radius: 4px;
+}
+
+.paciente, .odontologo, .turno {
+   display: flex;
+   justify-content: space-around;
+   list-style-type: none;
+   background-color: var(--second-bg-color);
+   padding: 20px;
+   width: 1100px;
+   margin-top: 5x;
+}
+
+.pac h3, .odon h3, .turn h3 {
+   text-align: center;
+   color:var(--text-color);
+   background-color: var(--nav-bg-color);
+   box-shadow: var(--nav-shadow);
+   border-radius: 4px;
+   padding: 5px;
+   margin-bottom: 10px;
+}
+
+
+.datosTur {
+   display: flex;
+   justify-content: space-around;
+   list-style-type: none;
+   background-color: var(--nav-bg-color);
+   box-shadow: var(--nav-shadow);
+   padding: 20px;
+   width: 1300px;
+   margin-top: 5x;
+   border-radius: 4px;
+}
+
+
+.exito {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 40px;
+    border: var(--main-border);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    margin: 40px;
+    background-color: var(--main-bg-color);
+}
+
+
